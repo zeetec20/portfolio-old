@@ -1,0 +1,125 @@
+html, body{
+    background-color: #def2f1;
+    height: 100%;
+}
+
+.waves{
+    position: absolute;
+}
+
+.navbar{
+    background-color: transparent !important;
+}
+
+.navbar, .navbar-brand{
+    font-size: 20px !important;
+}
+
+.nav-item{
+    position: relative;
+    margin-right: 20px;
+}
+
+.navbar-brand{
+    font-size: 28px !important;
+}
+
+.navbar a{
+    color: #17252a !important;
+}
+
+.navbar .navbar-nav a{
+    color: #17252ac2 !important;
+}
+
+.navbar .active a{
+    color: #17252a !important;
+}
+
+.home .container{
+    background-color: #3aafa9;
+    height: 500px;
+    background-image: url('../images/vector-programmer.svg') !important;
+    background-size: 90% 90%;
+    background-repeat: no-repeat;
+    background-position-x: 270%;
+    background-position-y: 60%;
+}
+
+.nav-item1 .span1{
+    margin: auto;
+    width: 70%;
+    height: 5px;
+    background-color: #17252a;
+    margin-top: -5px;
+    position: absolute;
+}
+
+.nav-item1 .span2{
+    width: 20%;;
+    height: 5px;
+    background-color: #17252a;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 80%;
+}
+
+.home{
+    position: relative;
+    top: 70px;
+    height: 900px !important;
+    z-index: 99;
+}
+
+.home .container h4{
+    position: absolute;
+    color: #def2f1;
+    margin-left: 20px;
+    top: 18%;
+    font-size: 28px;
+}
+
+.home .container h4 .name{
+    color: #17252a;
+    margin-top: 200px;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.home .container h4 .brackets{
+    color: #17252a;
+}
+
+.home .container h4 .underline{
+    text-decoration: #17252a underline;
+}
+
+.home .contact{
+    position: absolute;
+    top: 33%;
+    width: 18%;
+    background-color: #2b7a78;
+    padding: 1%;
+    margin-left: 20px;
+}
+
+.home .contact ul{
+    list-style: none;
+}
+
+.home ul img{
+    width: 25px;
+    margin-top: -8px;
+}
+
+.home ul h6{
+    float: right;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #def2f1;
+    width: 80%;
+}
+
+.waves2{
+    margin-top: -350px !important;
+}

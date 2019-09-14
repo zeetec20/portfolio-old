@@ -36,7 +36,7 @@ html, body{
     color: #17252a !important;
 }
 
-.home .container{
+.home .bg-home{
     background-color: #3aafa9;
     height: 500px;
     background-image: url('../images/vector-programmer.svg') !important;
@@ -44,6 +44,12 @@ html, body{
     background-repeat: no-repeat;
     background-position-x: 270%;
     background-position-y: 60%;
+}
+
+.home .container .bg-left{
+    width: 15%;
+    height: 100%;
+    margin-left: -20px;
 }
 
 .nav-item1 .span1{
@@ -73,7 +79,7 @@ html, body{
 
 .home .container h4{
     position: absolute;
-    color: #def2f1;
+    color: #17252a;
     margin-left: 20px;
     top: 18%;
     font-size: 28px;
@@ -87,19 +93,16 @@ html, body{
 }
 
 .home .container h4 .brackets{
-    color: #17252a;
+    color: #def2f1;
 }
 
 .home .container h4 .underline{
-    text-decoration: #17252a underline;
+    text-decoration: #def2f1 underline;
 }
 
 .home .contact{
     position: absolute;
     top: 33%;
-    width: 18%;
-    background-color: #2b7a78;
-    padding: 1%;
     margin-left: 20px;
 }
 
@@ -108,15 +111,16 @@ html, body{
 }
 
 .home ul img{
-    width: 25px;
-    margin-top: -8px;
+    width: 20px;
+    margin-top: -14px;
 }
 
 .home ul h6{
     float: right;
     margin-left: 10px;
     font-weight: bold;
-    color: #def2f1;
+    color: #17252a;
+    font-size: 12px;
     width: 80%;
 }
 

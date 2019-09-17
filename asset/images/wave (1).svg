@@ -10,7 +10,7 @@
    viewBox="0 0 1440 320"
    version="1.1"
    id="svg4"
-   sodipodi:docname="wave.svg"
+   sodipodi:docname="wave (1).svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
      id="metadata10">
@@ -28,15 +28,15 @@
     <filter
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
-       id="filter883"
-       x="-0.036666667"
-       width="1.0733333"
-       y="-0.165"
-       height="1.33">
+       id="filter909"
+       x="-0.036"
+       width="1.072"
+       y="-0.18"
+       height="1.36">
       <feGaussianBlur
          inkscape:collect="always"
-         stdDeviation="22"
-         id="feGaussianBlur885" />
+         stdDeviation="21.6"
+         id="feGaussianBlur911" />
     </filter>
   </defs>
   <sodipodi:namedview
@@ -52,23 +52,30 @@
      inkscape:window-height="704"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="0.64818122"
-     inkscape:cx="518.55994"
-     inkscape:cy="242.38279"
+     inkscape:zoom="0.91666667"
+     inkscape:cx="710.35116"
+     inkscape:cy="-68.842417"
      inkscape:window-x="0"
-     inkscape:window-y="126"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg4" />
   <path
-     id="path817"
-     d="M0,320L48,288C96,256,192,192,288,149.3C384,107,480,85,576,69.3C672,53,768,43,864,80C960,117,1056,203,1152,224C1248,245,1344,203,1392,181.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-     fill-opacity="1"
-     fill="#def2f1"
-     style="fill:#000000;opacity:0.2;filter:url(#filter883)" />
+     style="fill:#000000;fill-opacity:1;opacity:0.2;filter:url(#filter909)"
+     inkscape:connector-curvature="0"
+     id="path879"
+     d="M 0,288 40,256 C 80,224 160,160 240,133.3 320,107 400,117 480,144 c 80,27 160,69 240,80 80,11 160,-11 240,-48 80,-37 160,-91 240,-112 80,-21 160,-11 200,-5.3 l 40,5.3 V 0 h -40 C 1360,0 1280,0 1200,0 1120,0 1040,0 960,0 880,0 800,0 720,0 640,0 560,0 480,0 400,0 320,0 240,0 160,0 80,0 40,0 H 0 Z" />
   <path
-     fill="#def2f1"
-     fill-opacity="1"
-     d="M0,320L48,288C96,256,192,192,288,149.3C384,107,480,85,576,69.3C672,53,768,43,864,80C960,117,1056,203,1152,224C1248,245,1344,203,1392,181.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+     d="M 0,288 40,256 C 80,224 160,160 240,133.3 320,107 400,117 480,144 c 80,27 160,69 240,80 80,11 160,-11 240,-48 80,-37 160,-91 240,-112 80,-21 160,-11 200,-5.3 l 40,5.3 V 0 h -40 C 1360,0 1280,0 1200,0 1120,0 1040,0 960,0 880,0 800,0 720,0 640,0 560,0 480,0 400,0 320,0 240,0 160,0 80,0 40,0 H 0 Z"
      id="path2"
+     inkscape:connector-curvature="0"
      style="fill:#def2f1;fill-opacity:1" />
+  <rect
+     style="opacity:0.2;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9.60000038;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+     id="rect913"
+     width="1440"
+     height="318.55298"
+     x="0"
+     y="0"
+     rx="0"
+     ry="318.55298" />
 </svg>

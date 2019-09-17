@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 html, body{
     background-color: #def2f1;
     height: 100%;
@@ -5,10 +10,12 @@ html, body{
 
 .waves{
     position: absolute;
+    width: 100%;
 }
 
 .navbar{
-    background-color: transparent !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+    height: 60px;
 }
 
 .navbar, .navbar-brand{
@@ -18,6 +25,7 @@ html, body{
 .nav-item{
     position: relative;
     margin-right: 20px;
+    margin-top: -15px;
 }
 
 .navbar-brand{
@@ -36,6 +44,15 @@ html, body{
     color: #17252a !important;
 }
 
+.titleHome{
+    position: absolute;
+    transform: rotate(90deg);
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.24);
+    font-size: 50px;
+}
+
 .home .bg-home{
     background-color: #3aafa9;
     height: 500px;
@@ -52,22 +69,30 @@ html, body{
     margin-left: -20px;
 }
 
-.nav-item1 .span1{
+.nav-item{
+    overflow: hidden;
+}
+
+.nav-item1 .span1, .nav-item2 .span1, .nav-item3 .span1, .nav-item4 .span1, .nav-item5 .span1{
     margin: auto;
     width: 70%;
     height: 5px;
     background-color: #17252a;
     margin-top: -5px;
     position: absolute;
+    visibility: hidden;
+    margin-left: -80px;
 }
 
-.nav-item1 .span2{
+.nav-item1 .span2, .nav-item2 .span2, .nav-item3 .span2, .nav-item4 .span2, .nav-item5 .span2{
     width: 20%;;
     height: 5px;
     background-color: #17252a;
     position: absolute;
     margin-top: -5px;
     margin-left: 80%;
+    margin-left: -80px;
+    visibility: hidden;
 }
 
 .home{
@@ -125,5 +150,81 @@ html, body{
 }
 
 .waves2{
-    margin-top: -350px !important;
+    top: 110% !important;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    margin: 0 !important;
+}
+
+.titleAbout{
+    position: absolute;
+    left: 19%;
+    font-weight: bold;
+    font-size: 80px;
+    z-index: 1;
+    top: 120%;
+    margin-bottom: 600px;
+}
+
+.about .bg-about{
+    background-color: #3aafa9;
+}
+
+@media only screen and (max-width: 500px) {
+    .home .container{
+        margin: 2.5%;
+        width: 96%;
+    }
+
+    .home .container h4{
+        font-size: 22px;
+    }
+
+    .home .container h4 .name{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .home .container h4 .sp1,
+    .home .container h4 .sp2,
+    .home .container h4 .sp3{
+        background-color: rgba(255, 255, 255, 0.151);
+        border-radius: 2px;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1500px) {
+    .titleHome{
+        margin-top: 9.5%;
+        left: -1.5%;
+    }
+
+    .home{
+        margin-top: 1%;
+    }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1700px) {
+    .titleHome{
+        top: 26.5%;
+        right: 84%;
+        font-size: 60px;
+    }
+
+    .home{
+        top: 20%;
+    }
+}
+
+@media only screen and (min-width: 1700px) and (max-width: 2200px) {
+    .titleHome{
+        top: 30%;
+        right: 78%;
+        font-size: 60px;
+    }
+
+    .home{
+        top: 23%;
+    }
 }

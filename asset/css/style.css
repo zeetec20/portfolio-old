@@ -3,9 +3,14 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 html, body{
     background-color: #def2f1;
     height: 100%;
+    user-select: none;
 }
 
 .waves{
@@ -13,8 +18,8 @@ html, body{
     width: 100%;
 }
 
-.navbar{
-    background-color: rgba(255, 255, 255, 0) !important;
+#navbarID{
+    background-color: rgba(255, 255, 255, 0.342) !important;
     height: 60px;
 }
 
@@ -71,6 +76,7 @@ html, body{
 
 .nav-item{
     overflow: hidden;
+    cursor: pointer;
 }
 
 .nav-item1 .span1, .nav-item2 .span1, .nav-item3 .span1, .nav-item4 .span1, .nav-item5 .span1{
@@ -150,7 +156,7 @@ html, body{
 }
 
 .waves2{
-    top: 110% !important;
+    top: 115% !important;
     position: absolute;
     z-index: 2;
     width: 100%;
@@ -159,16 +165,99 @@ html, body{
 
 .titleAbout{
     position: absolute;
-    left: 19%;
+    left: -16%;
     font-weight: bold;
     font-size: 80px;
     z-index: 1;
-    top: 120%;
+    top: 135%;
     margin-bottom: 600px;
+    transition: left 1s;
+}
+
+.about{
+    height: 800px;
+    margin-bottom: 1000px;
+}
+
+.about .container{
+    overflow: hidden;
+    background-image: url('../images/waveBgAbout.png');
+    background-size: 20%;
+    background-position-x: 100%;
 }
 
 .about .bg-about{
     background-color: #3aafa9;
+    height: 500px !important;
+    background-repeat: no-repeat;
+}
+
+.about .bg-head{
+    position: absolute;
+    width: 300px;
+}
+
+.about .bg-profile{
+    position: absolute;
+    margin-top: 3%;
+    left: 10%;
+    width: 44%;
+}
+
+.about .aboutdetail{
+    position: absolute;
+    z-index: 2;
+    right: 140px;
+    font-weight: bold;
+    width: 34%;
+    font-size: 1.9vw;
+    margin-top: 3%;
+    letter-spacing: 0.5px;
+}
+
+.about .hobby1, .about .hobby2{
+    text-decoration: underline;
+    text-decoration-color: #def2f1;
+}
+
+.about .number{
+    text-decoration: none;
+}
+
+.about .hobby{
+    font-weight: bold;
+    position: absolute;
+    right: 30%;
+    margin-top: 12%;
+    font-size: 1.7vw;
+    z-index: 2;
+}
+
+.about .hobby{
+    letter-spacing: 1px;
+}
+
+.about .socialMedia{
+    position: absolute;
+    right: 35%;
+    margin-top: 20%;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.about .bg-headAbout{
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    transform: rotate(90deg);
+    right: -200px;
+    top: 200%;
+    height: 500px;
+}
+
+.about .aboutdetail .underline{
+    text-decoration: underline;
+    text-decoration-color: #def2f1;
 }
 
 @media only screen and (max-width: 500px) {
@@ -196,8 +285,9 @@ html, body{
 
 @media only screen and (min-width: 1100px) and (max-width: 1500px) {
     .titleHome{
-        margin-top: 9.5%;
+        margin-top: -9.5%;
         left: -1.5%;
+        transition: margin-top 1s;
     }
 
     .home{

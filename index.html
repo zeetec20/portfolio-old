@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap-grid.css">
     <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap-reboot.css">
     
+    <link rel="stylesheet" href="./asset/css/loading.css">
     <link rel="stylesheet" href="./asset/css/style.css">
 </head>
 
 <body>
+    <div id="loading" class="loading"></div>
     <img src="./asset/images/wave1.svg" alt="" class="waves">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbarID">
         <div class="container">
@@ -24,13 +26,13 @@
             </button>
             <div class="collapse navbar-collapse font-weight-bold justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active nav-item1" id="nav-item1">
-                        <a class="nav-link" href="#" id="nav-link1">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item active nav-item1" id="nav-item1" onclick="navbarClick(1)">
+                        <a class="nav-link" id="nav-link1">Home <span class="sr-only">(current)</span></a>
                         <span class="span1 rounded" id="span1a"></span>
                         <span class="span2 rounded" id="span1b"></span>
                     </li>
-                    <li class="nav-item nav-item2" id="nav-item2">
-                        <a class="nav-link" href="#"><span id="nav-link2">About</span></a>
+                    <li class="nav-item nav-item2" id="nav-item2" onclick="navbarClick(2)">
+                        <a class="nav-link" ><span id="nav-link2">About</span></a>
                         <span class="span1 rounded" id="span2a"></span>
                         <span class="span2 rounded" id="span2b"></span>
                     </li>
@@ -54,7 +56,7 @@
         </div>
     </nav>
 
-    <h1 class="titleHome">HOME</h1>
+    <h1 class="titleHome" id="titleHome">HOME</h1>
     <div class="home">
         <div class="container rounded shadow-lg bg-home">
             <img src="./asset/images/waves3.png" alt="" class="bg-left">
@@ -86,10 +88,18 @@
     </div>
 
     <img src="./asset/images/wave2.svg.png" alt="" class="waves waves2">
-    <h1 class="titleAbout">About</h1>
+    <h1 class="titleAbout" id="titleAbout">About Me</h1>
     <div class="about">
-        <div class="container rounded bg-about">
-
+        <div class="container rounded bg-about shadow-lg">
+            <img src="./asset/images/undraw_profile_6l1l.svg" alt="" class="bg-profile">
+            <h3 class="aboutdetail">I am a student from <span class="underline">Banyuwangi</span>, and I still study in <span class="underline">SMKN 1 Banyuwangi</span> to be exact grade 11.</h3>
+            <h3 class="hobby">Hoby : <br>
+                <span class="number">1.</span> Playing <span class="hobby1">Game</span> <br>
+                <span class="number">2.</span> Watching <span class="hobby2">Anime</span> <br>
+            </h3>
+            <div class="socialMedia">
+                <h3 class="title">Social Media</h3>
+            </div>
         </div>
     </div>
 

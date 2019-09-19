@@ -39,8 +39,8 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="0.22916667"
-     inkscape:cx="720"
-     inkscape:cy="160"
+     inkscape:cx="-170.18181"
+     inkscape:cy="509.0909"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -49,5 +49,7 @@
      d="m 864,-544 -37.3,48 C 789,-448 715,-352 720,-256 725,-160 811,-64 826.7,32 843,128 789,224 741.3,320 693,416 651,512 645.3,608 640,704 672,800 688,848 l 16,48 H 576 v -48 c 0,-48 0,-144 0,-240 0,-96 0,-192 0,-288 0,-96 0,-192 0,-288 0,-96 0,-192 0,-288 0,-96 0,-192 0,-240 v -48 z"
      id="path2"
      inkscape:connector-curvature="0"
-     style="fill:#f2f2f2;fill-opacity:1" />
+     style="fill:#f2f2f2;fill-opacity:1"
+     inkscape:export-xdpi="221.877"
+     inkscape:export-ydpi="221.877" />
 </svg>

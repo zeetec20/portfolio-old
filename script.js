@@ -1,20 +1,6 @@
-
-var color = 800;
-
-document.body.style.overflow = "hidden";
-
-
-window.addEventListener("load", function () {
-    document.getElementById('loading').style.display = "none";
-    document.body.style.overflow = "visible";
-})
-
 window.addEventListener("scroll", function () {
-    var scroll = document.documentElement.scrollTop;
-    console.log(scroll);
-    // if (scroll >= 50) {
-    //     color = scroll * 15;
-    // }
+    // var scroll = document.documentElement.scrollTop;
+    // console.log(scroll);
     navbarSpanCheckScroll();
     if (document.documentElement.scrollTop < key1) {
         titleResetMargin[1];

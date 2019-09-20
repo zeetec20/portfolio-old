@@ -13,6 +13,22 @@ html, body{
     user-select: none;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff00;
+}
+    
+::-webkit-scrollbar-thumb{
+    background-color: #3aafa9a2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3aafa9; 
+}
+
 .waves{
     position: absolute;
     width: 100%;
@@ -155,7 +171,7 @@ html, body{
     width: 80%;
 }
 
-.waves2{
+.waveAbout1{
     top: 115% !important;
     position: absolute;
     z-index: 2;
@@ -258,6 +274,11 @@ html, body{
 .about .aboutdetail .underline{
     text-decoration: underline;
     text-decoration-color: #def2f1;
+}
+
+.socialMedia .title{
+    font-weight: bold;
+    font-size: 1.7vw;
 }
 
 @media only screen and (max-width: 500px) {

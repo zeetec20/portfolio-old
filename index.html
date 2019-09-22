@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>zeetec</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
-    <!-- <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap-reboot.css"> -->
+    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap-reboot.css">
     
     <link rel="stylesheet" href="./asset/css/loading.css" id="style">
 </head>
@@ -41,18 +41,18 @@
                         <span class="span1 rounded" id="span2a"></span>
                         <span class="span2 rounded" id="span2b"></span>
                     </li>
-                    <li class="nav-item nav-item3" id="nav-item3">
-                        <a class="nav-link" id="skill" href="#">Skill</a>
+                    <li class="nav-item nav-item3" id="nav-item3" onclick="navbarClick(3)">
+                        <a class="nav-link" id="skill">Skill</a>
                         <span class="span1 rounded" id="span3a"></span>
                         <span class="span2 rounded" id="span3b"></span>
                     </li>
                     <li class="nav-item nav-item4" id="nav-item4">
-                        <a class="nav-link" id="nav-link4" href="#">Education</a>
+                        <a class="nav-link" id="nav-link4">Education</a>
                         <span class="span1 rounded" id="span4a"></span>
                         <span class="span2 rounded" id="span4b"></span>
                     </li>
                     <li class="nav-item nav-item5" id="nav-item5">
-                        <a class="nav-link" id="nav-link5" href="#">Portfolio</a>
+                        <a class="nav-link" id="nav-link5">Portfolio</a>
                         <span class="span1 rounded" id="span5a"></span>
                         <span class="span2 rounded" id="span5b"></span>
                     </li>
@@ -80,11 +80,11 @@
                         </li>
                         <li>
                             <img src="./asset/images/telegram.png" alt="">
-                            <h6>0821141950044</h6>
+                            <h6>082-141-950-044</h6>
                         </li>
                         <li>
                             <img src="./asset/images/whatsapp.png" alt="">
-                            <h6>0821141950044</h6>
+                            <h6>082-141-950-044</h6>
                         </li>
                     </ul>
                 </div>
@@ -98,30 +98,119 @@
         <div class="container rounded bg-about shadow-lg">
             <img src="./asset/images/undraw_profile_6l1l.svg" alt="" class="bg-profile">
             <h3 class="aboutdetail">I am a student from <span class="underline">Banyuwangi</span>, and I still study in <span class="underline">SMKN 1 Banyuwangi</span> to be exact grade 11.</h3>
-            <h3 class="hobby">Hoby : <br>
-                <span class="number">1.</span> Playing <span class="hobby1">Game</span> <br>
-                <span class="number">2.</span> Watching <span class="hobby2">Anime</span> <br>
+            <h3 class="hobby">Hoby<br>
+                <span class="number1">1.</span> Playing <span class="hobby1">Game</span> <br>
+                <span class="number2">2.</span> Watching <span class="hobby2">Anime</span> <br>
             </h3>
             <div class="socialMedia">
                 <h3 class="title">Social Media</h3>
-                <div class="icon">
-
+                <div class="iconAll">
+                    <a href="https://web.facebook.com/firman.lestari.12" rel="noopener noreferrer" target="_blank">
+                        <div class="sm facebook">
+                            <img src="./asset/images/icon/facebook/icon1.png" alt="" class="icon icon1">
+                            <img src="./asset/images/icon/facebook/icon2.png" alt="" class="icon icon2">
+                            <h1>Firman Lestari</h1>
+                        </div>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=6282141950044&text=Hay%20:D" rel="noopener noreferrer" target="_blank">
+                        <div class="sm whatsapp">
+                            <img src="./asset/images/icon/whatsapp/icon1.png" alt="" class="icon icon1">
+                            <img src="./asset/images/icon/whatsapp/icon2.png" alt="" class="icon icon2">
+                            <h1>082-141-950-044</h1>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/firmanjl363/" rel="noopener noreferrer" target="_blank">
+                        <div class="sm instagram">
+                            <img src="./asset/images/icon/instagram/icon1.png" alt="" class="icon icon1">
+                            <img src="./asset/images/icon/instagram/icon2.png" alt="" class="icon icon2">
+                            <h1>@firmanjl363</h1>
+                        </div>
+                    </a>
+                    <a href="https://t.me/zeetec20" rel="noopener noreferrer" target="_blank">
+                        <div class="sm telegram">
+                            <img src="./asset/images/icon/telegram/icon1.png" alt="" class="icon icon1">
+                            <img src="./asset/images/icon/telegram/icon2.png" alt="" class="icon icon2">
+                            <h1>082-141-950-044</h1>
+                        </div>
+                    </a>
+                    <a href="https://github.com/zeetec20" rel="noopener noreferrer" target="_blank">
+                        <div class="sm github">
+                            <img src="./asset/images/icon/github/icon1.png" alt="" class="icon icon1">
+                            <img src="./asset/images/icon/github/icon2.png" alt="" class="icon icon2">
+                            <h1>zeetec20</h1>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+
+    <h1 class="titleSkill" id="titleSkill">SKILL</h1>
+    <div class="skill">
+        <div class="container skill1 skillContent rounded">
+            <div class="skl html">
+                <div class="bar">
+                    <h2>HTML</h2>
+                    <h5 id="valuePercent1">0</h5>
+                    <progress max="100" value="0" id="progress1"></progress>
+                </div>
+            </div>
+            <div class="skl css">
+                <div class="bar">
+                    <h2>CSS</h2>
+                    <h5 id="valuePercent2">0</h5>
+                    <progress max="100" value="0" id="progress2"></progress>
+                </div>
+            </div>
+            <div class="skl javascript">
+                <div class="bar">
+                    <h2>Javascript</h2>
+                    <h5 id="valuePercent3">0</h5>
+                    <progress max="100" value="0" id="progress3"></progress>
+                </div>
+            </div>
+            <div class="skl php">
+                <div class="bar">
+                    <h2>PHP</h2>
+                    <h5 id="valuePercent4">0</h5>
+                    <progress max="100" value="0" id="progress4"></progress>
+                </div>
+            </div>
+            <div class="skl python">
+                <div class="bar">
+                    <h2>Python</h2>
+                    <h5 id="valuePercent5">0</h5>
+                    <progress max="100" value="0" id="progress5"></progress>
+                </div>
+            </div>
+            <div class="skl django">
+                <div class="bar">
+                    <h2>Django</h2>
+                    <h5 id="valuePercent6">0</h5>
+                    <progress max="100" value="0" id="progress6"></progress>
+                </div>
+            </div>
+
+        </div>
+        <div class="container skill2 skillContent rounded">
+            <div class="skl comunication">
+            </div>
+            <div class="skl teamwork"></div>
+            <div class="skl managementProject"></div>
+            <div class="skl creativity"></div>
+        </div>
+    </div>
 </body>
-<!-- 
+
 <script src="./asset/bootstrap/js/bootstrap.bundle.js"></script>
 <script src="./asset/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="./asset/bootstrap/js/bootstrap.js"></script>
-<script src="./asset/bootstrap/js/bootstrap.min.js"></script> -->
+<script src="./asset/bootstrap/js/bootstrap.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 
-<script src="function.js"></script>
 <script src="preloader.js"></script>
 
 </html>

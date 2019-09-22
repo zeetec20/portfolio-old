@@ -12,7 +12,7 @@ html, body {
     align-items: center;
     background: #def2f1;
     z-index: 9999;
-    transition: all 1s;
+    transition: opacity 1s;
 }
 
 .one {

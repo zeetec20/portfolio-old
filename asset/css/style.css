@@ -192,7 +192,7 @@ html, body{
 
 .about{
     height: 800px;
-    margin-bottom: 1000px;
+    margin-bottom: 0px;
 }
 
 .about .container{
@@ -236,14 +236,20 @@ html, body{
     text-decoration-color: #def2f1;
 }
 
-.about .number{
+.about .number1{
     text-decoration: none;
+    margin-left: -185px;
+}
+
+.about .number2{
+    text-decoration: none;
+    margin-left: 27px;
 }
 
 .about .hobby{
     font-weight: bold;
     position: absolute;
-    right: 30%;
+    right: 12%;
     margin-top: 12%;
     font-size: 1.7vw;
     z-index: 2;
@@ -255,7 +261,7 @@ html, body{
 
 .about .socialMedia{
     position: absolute;
-    right: 35%;
+    right: 33.8%;
     margin-top: 20%;
     font-weight: bold;
     z-index: 2;
@@ -276,9 +282,144 @@ html, body{
     text-decoration-color: #def2f1;
 }
 
+.socialMedia{
+    margin-left: 40px;
+}
+
 .socialMedia .title{
     font-weight: bold;
     font-size: 1.7vw;
+}
+
+.socialMedia .sm{
+    position: absolute;
+}
+
+.socialMedia .instagram{
+    margin-top: 30px;
+}
+
+.socialMedia .whatsapp{
+    margin-top: 60px;
+}
+
+.socialMedia .telegram{
+    margin-top: 90px;
+}
+
+.socialMedia .github{
+    margin-top: 120px;
+}
+
+.socialMedia .icon{
+    width: 20px;
+    position: absolute;
+}
+
+.socialMedia .icon2{
+    opacity: 0;
+}
+
+.socialMedia .sm{
+    margin-left: 30px;
+}
+
+.socialMedia .iconAll h1{
+    font-size: 13px;
+    color: #17252a;
+    font-weight: bold;
+    width: 100px;
+    margin-left: 30px;
+    margin-top: 2px;
+}
+
+.socialMedia .instagram, .socialMedia .telegram{
+    margin-left: 120px;
+}
+
+.socialMedia .sm:hover .icon1{
+    opacity: 0;
+}
+
+.socialMedia .sm:hover .icon2{
+    opacity: 1;
+}
+
+.socialMedia .sm:hover h1{
+    transition: color 0.3s;
+    color: #def2f1;
+}
+
+.titleSkill{
+    position: absolute;
+    top: 251.5%;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.skill{
+    width: 100%;
+    height: 800px;
+}
+
+.skill1{
+    float: left;
+    background-color: #3aafa9;
+    height: 490px;
+    width: 47%;
+    margin-left: 1.5%;
+}
+
+.skill2{
+    float: right;
+    background-color: #3aafa9;
+    height: 490px;
+    width: 47%;
+    margin-right: 1.5%;
+}
+
+.skill1 .skl{
+    position: relative;
+    margin-top: 18px;
+    margin-left: 3%;
+}
+
+.skill1 .skl h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20%;
+}
+
+.skill1 .skl h5{
+    margin-right: 33%;
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.skill1 progress[value] {
+  /* Reset the default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    margin-left: 6%;
+    width: 55%;
+    height: 20px;
+}
+
+.skill1 progress[value]::-webkit-progress-bar{
+    background-color: #17252a;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.skill1 progress[value]::-webkit-progress-value{
+    background-color: #def2f1;
+    transition: all 1s;
 }
 
 @media only screen and (max-width: 500px) {

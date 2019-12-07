@@ -1,5 +1,4 @@
 getRepositoryGithub()
-header()
 
 // let wordJob = document.querySelector('.about .user .job h1')
 let listNav = ['Home', 'About Me', 'Portfolio', 'Contact']
@@ -16,8 +15,6 @@ let interested = document.querySelector('#interestedItem')
 let interestedArray = ['Python', 'Django', 'JavaScript', 'Vue']
 
 let descriptionProject = document.querySelector('.portfolio .project h2')
-
-let listRepository = ['django-EComerce', 'Django-CRUD-User-FBV', 'django-library', 'DjangoChannels-Chat']
 
 interested.innerHTML += interestedArray.toString().replace(/,/g, ', ')
 

@@ -45,6 +45,8 @@ function clickButtonMenu(text) {
 }
 
 function getRepositoryGithub(params) {
+    let listRepository = ['django-EComerce', 'Django-CRUD-User-FBV', 'django-library', 'DjangoChannels-Chat']
+    
     axios({
         method: 'get',
         url: 'https://api.github.com/users/zeetec20/repos',

@@ -12,8 +12,7 @@ var timerPreloader = setInterval(() => {
             setTimeout(() => {
                 document.querySelector('.backgroundLoader').innerHTML = null
                 document.querySelector('.backgroundLoader').style.display = 'none'
-            }, 500);
-            console.log('siap')
+            }, 500)
         }
     }
 }, 1000);

@@ -20,10 +20,6 @@ function addProject(number, name, description, language, linkProject, date) {
     listProject.innerHTML += html
 }
 
-function header() {
-    
-}
-
 function clickNav(text) {
     if (text == 'Home') {
         window.scrollTo({top: 0, behavior: 'smooth'})
@@ -81,8 +77,4 @@ function getRepositoryGithub(params) {
             }
         });
     })
-}
-
-function randomText(elemnts) {
-    
 }

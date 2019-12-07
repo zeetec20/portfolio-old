@@ -1,216 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>zeetec</title>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <title>Zeetec</title>
 
-    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap-reboot.css">
-    
-    <link rel="stylesheet" href="./asset/css/loading.css" id="style">
+    <script src="./asset/preloader.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Courgette|Lato|Sulphur+Point|Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/style.css">
 </head>
-
 <body>
-    <div id="loading" class="loader">
-        <div class="one"></div>
-        <div class="two"></div>
+    <div class="backgroundLoader">
+        <div class="loader">
+            <div class="lineLoader"></div>
+            <div class="lineLoader"></div>
+            <div class="lineLoader"></div>
+            <div class="lineLoader"></div>
+        </div>
     </div>
-    
-    <img src="./asset/images/wave1.svg" alt="" class="waves">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbarID">
-        <div class="container">
-            <a class="navbar-brand font-weight-bold" href="#">Zeetec</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse font-weight-bold justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active nav-item1" id="nav-item1" onclick="navbarClick(1)">
-                        <a class="nav-link" id="nav-link1">Home <span class="sr-only">(current)</span></a>
-                        <span class="span1 rounded" id="span1a"></span>
-                        <span class="span2 rounded" id="span1b"></span>
-                    </li>
-                    <li class="nav-item nav-item2" id="nav-item2" onclick="navbarClick(2)">
-                        <a class="nav-link" ><span id="nav-link2">About</span></a>
-                        <span class="span1 rounded" id="span2a"></span>
-                        <span class="span2 rounded" id="span2b"></span>
-                    </li>
-                    <li class="nav-item nav-item3" id="nav-item3" onclick="navbarClick(3)">
-                        <a class="nav-link" id="skill">Skill</a>
-                        <span class="span1 rounded" id="span3a"></span>
-                        <span class="span2 rounded" id="span3b"></span>
-                    </li>
-                    <li class="nav-item nav-item4" id="nav-item4">
-                        <a class="nav-link" id="nav-link4">Education</a>
-                        <span class="span1 rounded" id="span4a"></span>
-                        <span class="span2 rounded" id="span4b"></span>
-                    </li>
-                    <li class="nav-item nav-item5" id="nav-item5">
-                        <a class="nav-link" id="nav-link5">Portfolio</a>
-                        <span class="span1 rounded" id="span5a"></span>
-                        <span class="span2 rounded" id="span5b"></span>
-                    </li>
-                </ul>
+
+    <div class="background-home">
+
+    </div>
+    <div class="container-fluid home">
+        <div class="row col-lg-12 navbar">
+            <div class="title-website col-lg-6">
+                <h1>Zeetec</h1>
+            </div>
+            <div class="nav col-lg-6">
+                <a><span class="nav1">Home</span> &nbsp;/&nbsp; <span class="nav2">About Me</span> &nbsp;/&nbsp; <span class="nav3">Portfolio</span> &nbsp;/&nbsp; <span class="nav4">Contact</span> </a>
             </div>
         </div>
-    </nav>
-
-    <h1 class="titleHome" id="titleHome">HOME</h1>
-    <div class="home">
-        <div class="container rounded shadow-lg bg-home">
-            <img src="./asset/images/waves3.png" alt="" class="bg-left">
-            <div class="container">
-                <h4 class="font-weight-bold">
-                    <span class="sp1">Hai I'am</span> <br>
-                    <span class="name sp2">Firman Justisio Lestari</span> <br>
-                    <span class="sp3">I'am a <span class="brackets">{</span> <span class="underline">Junior-Programmer</span> <span
-                        class="brackets">}</span></span>
-                </h4>
-                <div class="contact rounded">
-                    <ul class="list-group">
-                        <li>
-                            <img src="./asset/images/gmail.png" alt="">
-                            <h6>jusles363@gmail.com</h6>
-                        </li>
-                        <li>
-                            <img src="./asset/images/telegram.png" alt="">
-                            <h6>082-141-950-044</h6>
-                        </li>
-                        <li>
-                            <img src="./asset/images/whatsapp.png" alt="">
-                            <h6>082-141-950-044</h6>
-                        </li>
-                    </ul>
-                </div>
+        <div class="row col-lg-12 welcome">
+            <h1>Hello I'm Firman</h1>
+        </div>
+        <div class="row col-lg-12 buttonNav">
+            <div class="nav col-lg-4">
+                <button type="button" class="btn rounded-0 button1" onclick="clickButtonMenu(this.innerHTML)">Portfolio</button>
+            </div>
+            <div class="nav col-lg-4">
+                <button type="button" class="btn rounded-0 button2" onclick="clickButtonMenu(this.innerHTML)">About Me</button>
+            </div>
+            <div class="nav col-lg-4">
+                <button type="button" class="btn rounded-0 button3" onclick="clickButtonMenu(this.innerHTML)">Contact</button>
             </div>
         </div>
     </div>
 
-    <img src="./asset/images/waveAbout1.png" alt="" class="waves waveAbout1">
-    <h1 class="titleAbout" id="titleAbout">About Me</h1>
-    <div class="about">
-        <div class="container rounded bg-about shadow-lg">
-            <img src="./asset/images/undraw_profile_6l1l.svg" alt="" class="bg-profile">
-            <h3 class="aboutdetail">I am a student from <span class="underline">Banyuwangi</span>, and I still study in <span class="underline">SMKN 1 Banyuwangi</span> to be exact grade 11.</h3>
-            <h3 class="hobby">Hoby<br>
-                <span class="number1">1.</span> Playing <span class="hobby1">Game</span> <br>
-                <span class="number2">2.</span> Watching <span class="hobby2">Anime</span> <br>
-            </h3>
-            <div class="socialMedia">
-                <h3 class="title">Social Media</h3>
-                <div class="iconAll">
-                    <a href="https://web.facebook.com/firman.lestari.12" rel="noopener noreferrer" target="_blank">
-                        <div class="sm facebook">
-                            <img src="./asset/images/icon/facebook/icon1.png" alt="" class="icon icon1">
-                            <img src="./asset/images/icon/facebook/icon2.png" alt="" class="icon icon2">
-                            <h1>Firman Lestari</h1>
-                        </div>
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=6282141950044&text=Hay%20:D" rel="noopener noreferrer" target="_blank">
-                        <div class="sm whatsapp">
-                            <img src="./asset/images/icon/whatsapp/icon1.png" alt="" class="icon icon1">
-                            <img src="./asset/images/icon/whatsapp/icon2.png" alt="" class="icon icon2">
-                            <h1>082-141-950-044</h1>
-                        </div>
-                    </a>
-                    <a href="https://www.instagram.com/firmanjl363/" rel="noopener noreferrer" target="_blank">
-                        <div class="sm instagram">
-                            <img src="./asset/images/icon/instagram/icon1.png" alt="" class="icon icon1">
-                            <img src="./asset/images/icon/instagram/icon2.png" alt="" class="icon icon2">
-                            <h1>@firmanjl363</h1>
-                        </div>
-                    </a>
-                    <a href="https://t.me/zeetec20" rel="noopener noreferrer" target="_blank">
-                        <div class="sm telegram">
-                            <img src="./asset/images/icon/telegram/icon1.png" alt="" class="icon icon1">
-                            <img src="./asset/images/icon/telegram/icon2.png" alt="" class="icon icon2">
-                            <h1>082-141-950-044</h1>
-                        </div>
-                    </a>
-                    <a href="https://github.com/zeetec20" rel="noopener noreferrer" target="_blank">
-                        <div class="sm github">
-                            <img src="./asset/images/icon/github/icon1.png" alt="" class="icon icon1">
-                            <img src="./asset/images/icon/github/icon2.png" alt="" class="icon icon2">
-                            <h1>zeetec20</h1>
-                        </div>
-                    </a>
-                </div>
+    <div class="background-about"></div>
+    <div class="container-fluid about">
+        <div class="row col-lg-12 user">
+            <div class="row profile col-lg-12">
+                <div class="img"><img src="./asset/images/man.svg" width="90px" height="90px" alt=""></div>
+            </div>
+            <div class="row name col-lg-12">
+                <h1>Firman Justisio Lestari</h1>
+            </div>
+            <div class="row job col-lg-12">
+                <h1>Web Development</h1>
+            </div>
+            <div class="row description col-lg-12">
+                <h1>I am studying in Vocational High School 1 Banyuwangi and been in software engineering since entering the 2018 school year. I expect my ability can help someone.</h1>
+            </div>
+            <div class="row interested col-lg-12">
+                <h1>Interested: <span id="interestedItem"></span></h1>
             </div>
         </div>
+        <div class="row titlePage">
+            <div class="line"></div>
+            <h1>&nbsp;About Me</h1>
+        </div>
+
+        <div class="row line1"></div>
     </div>
 
-    <h1 class="titleSkill" id="titleSkill">SKILL</h1>
-    <div class="skill">
-        <div class="container skill1 skillContent rounded">
-            <div class="skl html">
-                <div class="bar">
-                    <h2>HTML</h2>
-                    <h5 id="valuePercent1">0</h5>
-                    <progress max="100" value="0" id="progress1"></progress>
+    <div class="background-portfolio"></div>
+    <div class="container-fluid portfolio">
+        <div class="row col-lg-12 listProject">
+            <!-- <div class="col-lg-4 boxProject">
+                <div class="number">
+                    <h1>1</h1>
+                </div>
+                <div class="project">
+                    <h1>Django1</h1>
+                    <h2 class="descriptionProject">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ullam quos cupiditate qui error deleniti saepe, architecto, nostrum quidem cum nam impedit ipsa alias dolores accusamus voluptate explicabo, perspiciatis odit!</h2>
+                    <h3>Language: <span class="language">Python</span></h3>
+                    <h4>2019-4-12</h4>
+                </div>
+                <div class="project1">
+                    <h1>Open Project</h1>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="row line1"></div>
+    </div>
+
+    <div class="background-contact"></div>
+    <div class="container-fluid contact">
+        <div class="row col-lg-12 message">
+            <h1 class="title">Stay in Touch</h1>
+        
+            <div class="listSosmed rwo col-lg-12">
+                <div class="sosmed row col-lg-12 sosmed1">
+                    <h1><span class="number">1.</span> <span class="name">Email</span></h1>
+                    <div class="line"></div>
+                    <a href=""><span>|</span> Jusles363</a>
+                </div>
+                <div class="sosmed row col-lg-12 sosmed2">
+                    <h1><span class="number">2.</span> <span class="name">Telegram</span></h1>
+                    <div class="line"></div>
+                    <a href=""><span>|</span> zeetec20</a>
+                </div>
+                <div class="sosmed row col-lg-12 sosmed3">
+                    <h1><span class="number">3.</span> <span class="name">Github</span></h1>
+                    <div class="line"></div>
+                    <a href=""><span>|</span> zeetec20</a>
+                </div>
+                <div class="sosmed row col-lg-12 sosmed4">
+                    <h1><span class="number">4.</span> <span class="name">Twitter</span></h1>
+                    <div class="line"></div>
+                    <a href=""><span>|</span> Firman Lestari</a>
+                </div>
+                <div class="sosmed row col-lg-12 sosmed5">
+                    <h1><span class="number">5.</span> <span class="name">Facebook</span></h1>
+                    <div class="line"></div>
+                    <a href=""><span>|</span> Firman Lestari</a>
                 </div>
             </div>
-            <div class="skl css">
-                <div class="bar">
-                    <h2>CSS</h2>
-                    <h5 id="valuePercent2">0</h5>
-                    <progress max="100" value="0" id="progress2"></progress>
-                </div>
-            </div>
-            <div class="skl javascript">
-                <div class="bar">
-                    <h2>Javascript</h2>
-                    <h5 id="valuePercent3">0</h5>
-                    <progress max="100" value="0" id="progress3"></progress>
-                </div>
-            </div>
-            <div class="skl php">
-                <div class="bar">
-                    <h2>PHP</h2>
-                    <h5 id="valuePercent4">0</h5>
-                    <progress max="100" value="0" id="progress4"></progress>
-                </div>
-            </div>
-            <div class="skl python">
-                <div class="bar">
-                    <h2>Python</h2>
-                    <h5 id="valuePercent5">0</h5>
-                    <progress max="100" value="0" id="progress5"></progress>
-                </div>
-            </div>
-            <div class="skl django">
-                <div class="bar">
-                    <h2>Django</h2>
-                    <h5 id="valuePercent6">0</h5>
-                    <progress max="100" value="0" id="progress6"></progress>
-                </div>
+            
+            <div class="row line1">
+                <div class="line"></div>
+                <h1>&nbsp;You can find me in </h1>
             </div>
 
-        </div>
-        <div class="container skill2 skillContent rounded">
-            <div class="skl comunication">
+            <div class="row line2">
+                <div class="line"></div>
+                <h1>&nbsp;Contact</h1>
             </div>
-            <div class="skl teamwork"></div>
-            <div class="skl managementProject"></div>
-            <div class="skl creativity"></div>
+        </div>
+
+        <div class="row footer">
+            <h1>Built by <a href="" class="name">Firman Justisio Lestari</a> © 2019</h1>
         </div>
     </div>
 </body>
 
-<script src="./asset/bootstrap/js/bootstrap.bundle.js"></script>
-<script src="./asset/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="./asset/bootstrap/js/bootstrap.js"></script>
-<script src="./asset/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-
-<script src="preloader.js"></script>
+<script src="./asset/zeetec.js"></script>
+<script src="./node_modules/axios/dist/axios.js"></script>
+<script src="./asset/function.js"></script>
+<script src="./asset/script.js"></script>
 
 </html>

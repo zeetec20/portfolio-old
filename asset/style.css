@@ -755,3 +755,57 @@ body{
         top: 28%;
     }
 }
+
+@media only screen and (max-width: 415px) {
+    .home .welcome h1{
+        font-size: 25px;
+    }
+
+    .about .description h1{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .about .interested h1{
+        font-size: 14px;
+    }
+
+    .about .user{
+        margin-top: 45%;
+    }
+
+    .about .titlePage{
+        left: -22%;
+    }
+
+    /* .home .title-website h1{
+        display: none;
+    } */
+
+    .home .nav a{
+        margin: 0 auto;
+        /* width: 100%; */
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .portfolio .listProject{
+        margin-top: 30%;
+    }
+
+    .contact .message .line1 h1{
+        font-size: 14px;
+    }
+
+    .contact .message .line1 .line{
+        margin-top: 8px;
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .home .welcome h1{
+        font-size: 20px;
+    }
+}

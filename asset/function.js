@@ -128,7 +128,3 @@ function mediaQuery(min = null, max = null) {
 
     return query.matches
 }
-
-function resize() {
-    changeButtonNav()
-}

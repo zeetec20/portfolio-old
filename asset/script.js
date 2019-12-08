@@ -38,6 +38,9 @@ document.body.onscroll = function (params) {
             document.querySelector('.home .title-website h1').style.fontSize = '22px'
             document.querySelector('.home .title-website h1').style.top = '2%'
         }
+        if (mediaQuery(null, 415)) {
+            document.querySelector('.home .title-website h1').style.display = 'none'
+        }
 
         nav.style.display = 'block'
         nav.style.visibility = 'visible'
@@ -46,6 +49,9 @@ document.body.onscroll = function (params) {
         nav.style.textShadow = '2px 2px #141212'
         title_website.style.textShadow = '2px 2px #141212'
     } else {
+        if (mediaQuery(null, 415)) {
+            document.querySelector('.home .title-website h1').style.display = 'block'
+        }
         document.querySelector('.home .title-website h1').style.fontSize = '40px'
 
         title_website.style.textShadow = null

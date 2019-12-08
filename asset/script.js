@@ -1,7 +1,11 @@
 getRepositoryGithub()
+changeButtonNav()
+
+let about = document.querySelector('.background-home')
+let portfolio = document.querySelector('.background-portfolio')
+let contact = document.querySelector('.background-contact')
 
 // let wordJob = document.querySelector('.about .user .job h1')
-let listNav = ['Home', 'About Me', 'Portfolio', 'Contact']
 
 let title_website = document.querySelector('.home .title-website')
 
@@ -28,7 +32,13 @@ if (descriptionProject != null) {
 
 document.body.onscroll = function (params) {
     // console.log(window.scrollY)
-    if (window.scrollY > 600) {
+    if ((about.offsetHeight - (about.offsetHeight * 1/100)) < window.scrollY) {
+        if (mediaQuery(null, 640)) {
+            document.querySelector('.home .title-website h1').style.transition = 'all 0.5s'
+            document.querySelector('.home .title-website h1').style.fontSize = '22px'
+            document.querySelector('.home .title-website h1').style.top = '2%'
+        }
+
         nav.style.display = 'block'
         nav.style.visibility = 'visible'
         nav.style.transition = 'all 0.5s'
@@ -36,6 +46,8 @@ document.body.onscroll = function (params) {
         nav.style.textShadow = '2px 2px #141212'
         title_website.style.textShadow = '2px 2px #141212'
     } else {
+        document.querySelector('.home .title-website h1').style.fontSize = '40px'
+
         title_website.style.textShadow = null
         nav.style.transition = 'all 0s'
         nav.style.visibility = 'hidden'

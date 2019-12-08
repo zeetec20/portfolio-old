@@ -9,8 +9,23 @@ html, body{
 
 body{
     overflow-y: hidden;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
+
+
+::-webkit-scrollbar-track{
+	background-color: white;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #141212;
+}
+
 
 .backgroundLoader{
     position: absolute;
@@ -204,8 +219,9 @@ body{
 }
 
 .about .user{
+    width: 90%;
     margin: auto;
-    margin-top: 145px;
+    margin-top: 12.5%;
 }
 
 .about .profile img{
@@ -553,7 +569,6 @@ body{
     position: absolute;
     bottom: 10px;
     left: 0;
-    /* box-shadow: 5px 1px 0px 0px #141212; */
 }
 
 .contact .listSosmed .sosmed a{
@@ -566,9 +581,177 @@ body{
     font-size: 14px;
     letter-spacing: 1px;
     text-decoration: underline;
-    /* text-align: center; */
 }
 
 .contact .listSosmed .sosmed:nth-child(even){
     margin-left: 5%;
+}
+
+@media only screen and (min-width: 1440px) {
+    .home .welcome h1{
+        font-size: 45px;
+    }
+
+    .home .welcome{
+        margin-top: 18%;
+    }
+
+    .about .user{
+        margin-top: 18%;
+    }
+
+    .about .titlePage{
+        top: 77%;
+    }
+
+    .portfolio .line1{
+        height: 11.5%;
+    }
+
+    .contact .message .line2{
+        right: -10%;
+        bottom: 50%;
+    }
+
+    .contact .message .line2 .line{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .home .buttonNav{
+        margin-left: 1%;
+    }
+
+    .home .buttonNav button{
+        margin: 3px auto;
+        width: 70%;
+    }
+
+    .home .buttonNav .nav .button1{
+        margin: 3px auto;
+        width: 70%;
+    }
+
+    .home .buttonNav .nav .button3{
+        margin: 3px auto;
+        width: 70%;
+    }
+
+    .portfolio .listProject{
+        overflow-y: auto;
+        height: 80%;
+        margin-top: 11%;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .home .welcome{
+        margin-top: 24%;
+    }
+
+    .portfolio .listProject{
+        margin-top: 13%;
+    }
+
+    .contact .message .line2{
+        right: -28%;
+        bottom: 37%;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .about .user{
+        margin-top: 28%;
+    }
+
+    .about .description h1{
+        width: 90%;
+    }
+
+    .about .interested h1{
+        width: 90%;
+    }
+
+    .about .titlePage{
+        left: -12%;
+    }
+
+    .portfolio .listProject{
+        margin-top: 16%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    /* .home .title-website h1{
+        font-size: 20px;
+        top: 2%;
+    } */
+
+    .home .nav a{
+        font-size: 16px;
+        top: 1.2%;
+    }
+
+    .contact .message .line2{
+        right: -37%;
+        bottom: 30%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .home .buttonNav{
+        margin-left: 2%;
+    }
+
+    ::-webkit-scrollbar-track{
+        background-color: white;
+    }
+    
+    ::-webkit-scrollbar{
+        width: 5px;
+        background-color: #F5F5F5;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        background-color: #141212;
+    }
+
+    .home .welcome{
+        margin-top: 30%;
+    }
+
+    .home .welcome h1{
+        transition: all 0.5s;
+        font-size: 32px;
+    }
+
+    .about .user{
+        margin-left: 8%;
+    }
+
+    .portfolio .listProject{
+        margin-top: 19.5%;
+    }
+
+    .contact .footer h1{
+        font-size: 12px;
+    }
+
+    .contact .message .line2{
+        right: -27%;
+        bottom: 30%;
+    }
+
+    .contact .message .line2 .line{
+        width: 200px;
+    }
+
+    .contact .message .line1 .line{
+        width: 100px;
+    }
+
+    .contact .listSosmed{
+        top: 28%;
+    }
 }

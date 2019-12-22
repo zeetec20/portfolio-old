@@ -1,9 +1,9 @@
 let timer = 0
-let preloader1, preloader2, preloader;
+let preloader1, preloader2, preloader
 
 var timerPreloader = setInterval(() => { 
     timer += 1;
-    if (timer > 2) {
+    if (timer > 3) {
         if (document.readyState == 'complete') {
             clearInterval(timerPreloader);
             document.querySelector('.backgroundLoader').style.transition = 'all 0.5s'
@@ -15,4 +15,4 @@ var timerPreloader = setInterval(() => {
             }, 500)
         }
     }
-}, 1000);
+}, 500)

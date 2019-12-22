@@ -1,0 +1,45 @@
+{
+  "name": "zeetec20.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "webpack-live": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeetec20/zeetec20.github.io.git"
+  },
+  "author": "Firman Justisio Lestari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeetec20/zeetec20.github.io/issues"
+  },
+  "homepage": "https://github.com/zeetec20/zeetec20.github.io#readme",
+  "dependencies": {
+    "autoprefixer": "^9.7.3",
+    "axios": "^0.19.0",
+    "babel": "^6.23.0",
+    "webpack": "^4.41.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.0",
+    "file-loader": "^5.0.2",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^1.1.1",
+    "webpack-cli": "^3.3.10"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie < 11",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ]
+}

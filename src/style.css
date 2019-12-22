@@ -1,0 +1,828 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar-track{
+	background-color: white;
+}
+
+::-webkit-scrollbar{
+	width: 7px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #141212;
+}
+
+
+.backgroundLoader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #141212;
+    z-index: 10;
+}
+
+.loader {
+    position: absolute;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    /* z-index: 10; */
+}
+
+.lineLoader {
+    animation: expand 1s ease-in-out infinite;
+    border-radius: 10px;
+    display: inline-block;
+    transform-origin: center center;
+    margin: 0 auto;
+    margin-left: 15px;
+    width: 1px;
+    height: 35px;
+}
+
+.lineLoader:nth-child(1) {
+    background: #ffd700;
+}
+
+.lineLoader:nth-child(2) {
+    animation-delay: 180ms;
+    background: white;
+}
+
+.lineLoader:nth-child(3) {
+    animation-delay: 360ms;
+    background: #ffd700;
+}
+
+.lineLoader:nth-child(4) {
+    animation-delay: 540ms;
+    background: white;
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(2);
+    }
+}
+
+.background-home{
+    background-image: url('../asset/images/background2-unplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: blur(0.5px) grayscale(100%);
+    /* transform: rotate(180deg); */
+    /* filter: FlipH; */
+    transform: scaleX(-1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.home{
+    background-color: #141212;
+    width: 100%;
+    height: 112%;
+    box-shadow: 0px 0px 60px -20px #141212;
+}
+
+.home .blog{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.home .blog h1{
+    font-family: 'Courgette', cursive;
+    color: #ffd700;
+    margin-top: 7px;
+    z-index: 3;
+}
+
+.navbar .title-website{
+    font-family: 'Courgette', cursive;
+    color: #ffd700;
+    margin-top: 11px;
+    z-index: 3;
+}
+
+.navbar .title-website h1{
+    position: fixed;
+    font-size: 26px;
+}
+
+.navbar .nav{
+    font-family: 'Courgette', cursive;
+    color: #ffd700;
+    margin-top: 7px;
+}
+
+.navbar .nav a{
+    position: fixed;
+    text-align: right;
+    /* width: 100%; */
+    right: 30px;
+    font-size: 18px;
+    margin-top: 8px;
+    opacity: 0;
+    z-index: 3;
+    /* visibility: hidden; */
+    transition: all 0.5s;
+}
+
+.navbar .nav span{
+    cursor: pointer;
+}
+
+.home .welcome{
+    margin: auto;
+    margin-top: 15%;
+    margin-bottom: 20px;
+    border-bottom: solid white 1px;
+    width: 70%;
+}
+
+.home .welcome h1{
+    color: #ffd700;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    margin: auto;
+    /* font-weight: 600; */
+}
+
+.home .welcome h1{
+    /* border-right: 2px solid white; */
+    width: 400px;
+	white-space: nowrap;
+	overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.home .buttonNav{
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.home .buttonNav button{
+    background-color: #14121200;
+    border-color: white;
+    color: white;
+    font-size: 20px;
+    width: 150px;
+    margin: auto;
+    box-shadow: none !important;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}
+
+.home .buttonNav button:hover{
+    transition: all 0.5s;
+    background-color: white;
+    border-color: white;
+    color: #141212;
+}
+
+/* .home .buttonNav .nav .button1{
+    margin-left: 60%;
+}
+
+.home .buttonNav .nav .button3{
+    margin-right: 60%;
+} */
+
+.background-about{
+    background-image: url('../asset/images/background3-unplash.jpg');
+    background-size: 100% 100%;
+    filter: blur(0.5px) grayscale(100%);
+    position: absolute;
+    top: 112%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: #ffd90080;
+}
+
+.about{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.about .user{
+    width: 90%;
+    margin: auto;
+    margin-top: 12.5%;
+}
+
+.about .profile img{
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+
+.about .profile .img{
+    padding: 3px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #ffd700;
+    border: solid 6px #141212;
+    margin-bottom: 10px;
+}
+
+.about .name h1{
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline #141212;
+}
+
+.about .job h1{
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+}
+
+.about .description h1{
+    font-size: 18px;
+    width: 43%;
+    margin: auto;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-top: solid #ffd700 2px;
+    border-bottom: solid #ffd700 2px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    /* box-shadow: 0px 2px 0px 0px #141212; */
+}
+
+.about .interested h1{
+    font-size: 18px;
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;    
+}
+
+.about .titlePage{
+    position: absolute;
+    transform: rotate(270deg);
+    top: 70%;
+}
+
+.about .titlePage .line{
+    width: 100px;
+    height: 1px;
+    background-color: #141212;
+    margin-top: 14px;
+}
+
+.about .titlePage h1{
+    font-size: 22px;
+    letter-spacing: 5px;
+    font-family: 'Roboto Mono', monospace;
+    color: #141212;
+}
+
+.about .line1{
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 97%;
+    background-color: #141212;
+    height: 14.5%;
+    z-index: 2;
+    box-shadow: 0px 0px 70px -10px #141212;
+}
+
+.background-portfolio{
+    width: 100%;
+    height: 100%;
+    background-image: url('../asset/images/background5-unplash.jpg');
+    background-size: 100% 100%;
+    position: absolute;
+    top: 200%;
+    z-index: -2;
+    filter: grayscale(100%) blur(0.5px);
+}
+
+.portfolio{
+    position: absolute;
+    top: 200%;
+    width: 100%;
+    height: 100%;
+    /* background-color: white; */
+}
+
+.portfolio .listProject{
+    margin: auto;
+}
+
+.portfolio .boxProject{
+    margin-top: 10%;
+}
+
+.portfolio .project{
+    /* background-color: #141212; */
+    height: 110px;
+    width: 82%;
+    border: solid 1px #141212;
+    padding: 7px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    margin-top: 30px;
+    background-color: #ffd900c9;
+    box-shadow: 2px 2px 0px 0px #141212;
+}
+
+.portfolio .project h1{
+    font-size: 16px;
+    font-family: 'Comfortaa', cursive;
+    color: #141212;
+    font-weight: bold;
+}
+
+.portfolio .project h2{
+    font-size: 14.5px;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+}
+
+.portfolio .project h3{
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.portfolio .project h3 .language{
+    font-weight: bold;
+}
+
+.portfolio .project h4{
+    font-size: 14px;
+    position: absolute;
+    right: 7px;
+    bottom: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.portfolio .number{
+    width: 55%;
+    height: 60px;
+    border: solid #141212 1px;
+    position: absolute;
+    z-index: 1;
+    /* background-color: #141212; */
+}
+
+.portfolio .number h1{
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    padding-right: 71%;
+    margin-top: 15px;
+    color: #141212;
+    /* font-weight: bold; */
+}
+
+.portfolio .project1{
+    width: 60%;
+    height: 60%;
+    /* background-color: #141212; */
+    position: absolute;
+    bottom: -20%;
+    right: 10%;
+    border: solid 1px #141212;
+}
+
+.portfolio .project1 h1{
+    color: #ffd700;
+    font-size: 14px;
+    position: absolute;
+    bottom: -1.5%;
+    padding-left: 5px;
+    /* font-weight: bold; */
+    cursor: pointer;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 0px #141212;
+}
+
+.portfolio .line1{
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 97%;
+    background-color: #141212;
+    height: 14.5%;
+    z-index: 2;
+    box-shadow: 0px 0px 70px -10px #141212;
+}
+
+.background-contact{
+    background-image: url('../asset/images/background7-unplash.jpg');
+    background-size: 100% 150%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 300%;
+    filter: grayscale(100%) blur(0.5px);
+}
+
+.contact{
+    position: absolute;
+    top: 300%;
+    width: 100%;
+    height: 100%;
+}
+
+.contact .footer{
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 93%;
+    background-color: #141212;
+    height: 7%;
+    z-index: 2;
+    box-shadow: 0px 0px 70px -10px #141212;
+}
+
+.contact .footer h1{
+    font-size: 14px;
+    margin: auto;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.contact .footer .name{
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.contact .message{
+    padding-top: 7.5%;
+    height: 100%;
+}
+
+.contact .message .title{
+    position: absolute;
+    top: 14.5%;
+    font-size: 40px;
+    color: #141212;
+    font-family: 'Comfortaa', cursive;
+    margin-left: 25px;
+    z-index: 1;
+}
+
+.contact .message .line1{
+    position: absolute;
+    top: 22%;
+}
+
+.contact .message .line1 .line{
+    width: 150px;
+    height: 1px;
+    background-color: #141212;
+    margin-top: 13px;
+}
+
+.contact .message .line1 h1{
+    font-size: 22px;
+    letter-spacing: 5px;
+    font-family: 'Roboto Mono', monospace;
+    color: #141212;
+}
+
+.contact .message .line2{
+    position: absolute;
+    /* top: 22%; */
+    bottom: 40%;
+    right: -15%;
+    transform: scaleX(-1) rotate(270deg);
+}
+
+.contact .message .line2 .line{
+    width: 350px;
+    height: 1px;
+    background-color: #141212;
+    margin-top: 13px;
+}
+
+.contact .message .line2 h1{
+    font-size: 22px;
+    letter-spacing: 5px;
+    font-family: 'Roboto Mono', monospace;
+    color: #141212;
+    transform: scaleX(-1);
+    text-shadow: 0px 0px 1px white;
+}
+
+.contact .listSosmed{
+    top: 25%;
+    position: absolute;
+}
+
+.contact .listSosmed .sosmed{
+    margin: 1.5%;
+    width: 97%;
+}
+
+.contact .listSosmed .sosmed .name{
+    font-size: 16px;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 6px;
+}
+
+.contact .listSosmed .sosmed .number{
+    font-size: 24px;
+    color: #ffd700;
+    text-shadow: 2px 2px 0px #141212;
+    letter-spacing: 0px;
+}
+
+.contact .listSosmed .sosmed .line{
+    width: 20%;
+    height: 1px;
+    background-color: #141212;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.contact .listSosmed .sosmed a{
+    position: absolute;
+    color: #ffd700;
+    text-shadow: 0.5px 0.5px 0px #141212;
+    font-family: 'Roboto Mono', monospace;
+    bottom: -9px;
+    left: 13%;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.contact .listSosmed .sosmed:nth-child(even){
+    margin-left: 5%;
+}
+
+@media only screen and (min-width: 1440px) {
+    .home .welcome h1{
+        font-size: 45px;
+    }
+
+    .home .welcome{
+        margin-top: 18%;
+    }
+
+    .about .user{
+        margin-top: 18%;
+    }
+
+    .about .titlePage{
+        top: 77%;
+    }
+
+    .portfolio .line1{
+        height: 11.5%;
+    }
+
+    .contact .message .line2{
+        right: -10%;
+        bottom: 50%;
+    }
+
+    .contact .message .line2 .line{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .home .buttonNav{
+        margin-left: 1%;
+    }
+
+    .home .buttonNav button{
+        margin: 3px auto;
+        width: 70%;
+    }
+
+    .home .buttonNav .nav .button1{
+        margin: 3px auto;
+        width: 70%;
+    }
+
+    .home .buttonNav .nav .button3{
+        margin: 3px auto;
+        width: 70%;
+    }
+
+    .portfolio .listProject{
+        overflow-y: auto;
+        height: 80%;
+        margin-top: 11%;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .home .welcome{
+        margin-top: 24%;
+    }
+
+    .portfolio .listProject{
+        margin-top: 13%;
+    }
+
+    .contact .message .line2{
+        right: -28%;
+        bottom: 37%;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .about .user{
+        margin-top: 28%;
+    }
+
+    .about .description h1{
+        width: 90%;
+    }
+
+    .about .interested h1{
+        width: 90%;
+    }
+
+    .about .titlePage{
+        left: -12%;
+    }
+
+    .portfolio .listProject{
+        margin-top: 16%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    /* .home .title-website h1{
+        font-size: 20px;
+        top: 2%;
+    } */
+
+    .home .nav a{
+        font-size: 16px;
+        top: 1.2%;
+    }
+
+    .contact .message .line2{
+        right: -37%;
+        bottom: 30%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .home .buttonNav{
+        margin-left: 2%;
+    }
+
+    ::-webkit-scrollbar-track{
+        background-color: white;
+    }
+    
+    ::-webkit-scrollbar{
+        width: 5px;
+        background-color: #F5F5F5;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        background-color: #141212;
+    }
+
+    .home .welcome{
+        margin-top: 30%;
+    }
+
+    .home .welcome h1{
+        transition: all 0.5s;
+        font-size: 32px;
+    }
+
+    .about .user{
+        margin-left: 8%;
+    }
+
+    .portfolio .listProject{
+        margin-top: 19.5%;
+    }
+
+    .contact .footer h1{
+        font-size: 12px;
+    }
+
+    .contact .message .line2{
+        right: -27%;
+        bottom: 30%;
+    }
+
+    .contact .message .line2 .line{
+        width: 200px;
+    }
+
+    .contact .message .line1 .line{
+        width: 100px;
+    }
+
+    .contact .listSosmed{
+        top: 28%;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .home .welcome h1{
+        font-size: 25px;
+    }
+
+    .about .description h1{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .about .interested h1{
+        font-size: 14px;
+    }
+
+    .about .user{
+        margin-top: 45%;
+    }
+
+    .about .titlePage{
+        left: -22%;
+    }
+
+    /* .home .title-website h1{
+        display: none;
+    } */
+
+    .home .nav a{
+        margin: 0 auto;
+        /* width: 100%; */
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .portfolio .listProject{
+        margin-top: 30%;
+    }
+
+    .contact .message .line1 h1{
+        font-size: 14px;
+    }
+
+    .contact .message .line1 .line{
+        margin-top: 8px;
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .home .welcome h1{
+        font-size: 20px;
+    }
+}
